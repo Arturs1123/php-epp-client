@@ -6,6 +6,6 @@ class hrEppConnection extends eppConnection {
         parent::__construct($logging, $settingsfile);
         parent::setServices(array('urn:ietf:params:xml:ns:domain-1.0' => 'domain', 'urn:ietf:params:xml:ns:contact-1.0' => 'contact'));
         parent::useExtension('hr-1.0');
-//      parent::enableDnssec();
+        parent::enableDnssec();
     }
 }
