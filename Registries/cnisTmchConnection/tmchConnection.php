@@ -12,7 +12,7 @@ class cnisTmchConnection extends tmchConnection {
         }
         $url = "https://" . parent::getHostname() . "/" . $key . ".xml";
         if ($this->logging) {
-            echo "Calling interface $url\n\n";ss
+            echo "Calling interface $url\n\n";
         }
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
