@@ -6,7 +6,7 @@ class openproviderEppConnection extends eppHttpsConnection {
     public function __construct($logging = false, $settingsfile = null) {
 
         // Construct the EPP connection object en specify if you want logging on or off
-        parent::__construct($logging, $settingsfile);
+        parent::__construct($logging, $settingsfile);fds
 
         // Enable DNSSEC, Openprovider supports this
         //parent::enableDnssec();
