@@ -8,7 +8,7 @@ class eppCheckContactTest extends eppTestCase {
      * Expects a standard result for a free contact handle
      */
     public function testCheckContactAvailable() {
-        $handleid = 999999999;
+        $handleid = 9999999999;
         $contact = new Metaregistrar\EPP\eppContactHandle($handleid);
         $this->assertInstanceOf('Metaregistrar\EPP\eppContactHandle',$contact);
         $check = new Metaregistrar\EPP\eppCheckRequest($contact);
